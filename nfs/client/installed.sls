@@ -20,4 +20,6 @@ nfs.client.installed:
     - name: {{ client.service.name }}
     - require:
       - pkg: nfs.client.installed
+    - watch:
+      - pkg: nfs.client.installed
 {% endif %}
