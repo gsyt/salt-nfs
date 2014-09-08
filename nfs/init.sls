@@ -1,6 +1,6 @@
 include:
   - nfs.installed
 
-nrpe:
+nfs:
   require:
     - sls: nfs.installed
